@@ -1,0 +1,12 @@
+#Impedir que se pueda ver el listado de contenidos
+Options All -Indexes
+
+#Url Amigables
+RewriteEngine On
+
+
+#Aclaracion: Si no se configura el Home del htaccess "generico" que viene no va a funcionar cuando le pasemos la ruta al navegador. El generico que aparece en la pagina es:RewriteRule ^productos/([a-zA-Z]+)/([a-zA-Z]+)$ tienda.php?productos=$1&categoria=$2
+
+#Home correcto para el practico
+RewriteRule ^([a-zA-Z]+)$ index.php?ruta=$1
+
