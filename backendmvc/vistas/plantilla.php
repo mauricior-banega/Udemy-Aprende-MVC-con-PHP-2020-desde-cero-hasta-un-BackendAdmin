@@ -44,31 +44,46 @@ CSS - Exportamos los link rel de CSS de ElaAdmin en este documento. Asi como tam
 
     <?php
 
-    //Hacemos el llamado a cada archivo mostrandolo con formato HTML
+    //Hacemos una condicional de login: Si funciona ejecuta todos los archivos, sino abre login (pasara por el else).
+    if ( isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"]==="ok" )
+    {
 
-        include "modulos/menu.php"; //1º Inclusion: Menu
-       
-        echo '<div id="right-panel" class="right-panel">';  //Right Panel (1*)
+        //Hacemos el llamado a cada archivo mostrandolo con formato HTML
 
-        include "modulos/cabezote.php"; //2º Inclusion: Cabezote
+            include "modulos/menu.php"; //1º Inclusion: Menu
         
-      //include "modulos/login.php"; Lo haremos cuando finalizemos las primeras 3 secciones de arriba.
-        
+            echo '<div id="right-panel" class="right-panel">';  //Right Panel (1*)
 
-        if(isset($_GET["ruta"]))
-        {
-            if($_GET["ruta"] == "inicio" ||
-               $_GET["ruta"] == "perfil" ||
-               $_GET["ruta"] == "productos" )
+            include "modulos/cabezote.php"; //2º Inclusion: Cabezote
+            
+        //include "modulos/login.php"; Lo haremos cuando finalizemos las primeras 3 secciones de arriba.
+            
+
+            if(isset($_GET["ruta"]))
             {
-                include "modulos/". $_GET["ruta"]. ".php";
-            }   
+                if($_GET["ruta"] == "inicio" ||
+                $_GET["ruta"] == "perfil" ||
+                $_GET["ruta"] == "productos" )
 
-        }
+                {
+                    include "modulos/". $_GET["ruta"]. ".php";
+                }   
 
-        include "modulos/footer.php"; //3º Inclusion: Footer
+            }
 
-        echo '</div>';
+            include "modulos/footer.php"; //3º Inclusion: Footer
+
+            echo '</div>';
+
+    }//Fin*if
+
+    else
+    {
+            include "modulos/login.php"; //3º Inclusion: Footer
+    }
+            
+
+
     ?>
 
 
