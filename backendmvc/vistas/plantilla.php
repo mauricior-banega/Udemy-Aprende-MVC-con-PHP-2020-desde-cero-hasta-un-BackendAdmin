@@ -20,8 +20,8 @@ CSS - Exportamos los link rel de CSS de ElaAdmin en este documento. Asi como tam
 
     <!--Librerias Importadas de ElaAdmin las pegamos aca (2*)-->
 
-    <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
-    <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
+    <link rel="apple-touch-icon" href="vistas/img/plantilla/icono.png"> 
+    <link rel="shortcut icon" href="vistas/img/plantilla/icono.png"> <!--IMAGEN DE LA PESTAÑA-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
