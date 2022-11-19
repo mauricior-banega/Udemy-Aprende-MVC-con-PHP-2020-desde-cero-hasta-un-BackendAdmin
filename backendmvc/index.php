@@ -11,7 +11,12 @@
     -Crear un login
     -Crear un backend admin
 
-Pagina Web HTACCESS: https://www.arsys.es/blog/url-amigables-htaccess
+Aclaraciones:
+
+ -Usaremos para crear URL amigables con la modificación del archivo .htaccess. Google compila mejor este tipo de paginas donde tiene aplicado este archivo. Lo creamos desde la fuente:
+    Pagina Web HTACCESS: https://www.arsys.es/blog/url-amigables-htaccess
+
+-Usaremos la plantilla ElaAdmin de Boostrap que descargaremos para nuestro proyecto. Podemos Googlearla o sacarla de la web: colorlib.com/polygon/elaadmin
 
 -->
 
