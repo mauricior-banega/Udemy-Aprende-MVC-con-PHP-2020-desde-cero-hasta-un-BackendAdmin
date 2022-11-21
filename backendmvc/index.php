@@ -16,7 +16,7 @@ Aclaraciones:
  -Usaremos para crear URL amigables con la modificación del archivo .htaccess. Google compila mejor este tipo de paginas donde tiene aplicado este archivo. Lo creamos desde la fuente:
     Pagina Web HTACCESS: https://www.arsys.es/blog/url-amigables-htaccess
 
--Usaremos la plantilla ElaAdmin de Boostrap que descargaremos para nuestro proyecto. Podemos Googlearla o sacarla de la web: colorlib.com/polygon/elaadmin
+-Usaremos la plantilla ElaAdmin de Boostrap que descargaremos para nuestro proyecto. Podemos Googlearla o sacarla de la web: colorlib.com/polygon/elaadmin. Yo la dejare descargada en la carpeta misma del proyecto.
 
 -->
 
@@ -24,6 +24,8 @@ Aclaraciones:
 <?php
 
     require_once "controladores/plantilla.controlador.php";
+    require_once "modelos/administrador.modelo.php"; //Se carga en la clase 12.Creando modelos
+    require_once "modelos/rutas.php"; //Se carga en la clase 12.Creando modelos
 
 $plantilla = new ControladorPlantilla();
 $plantilla->ctrPlantilla();

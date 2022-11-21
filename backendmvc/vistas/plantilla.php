@@ -46,7 +46,7 @@ CSS - Exportamos los link rel de CSS de ElaAdmin en este documento. Asi como tam
 
     //Hacemos una condicional de login: Si funciona ejecuta todos los archivos, sino abre login (pasara por el else).
     if ( isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"]==="ok" )
-    {
+   {
 
         //Hacemos el llamado a cada archivo mostrandolo con formato HTML
 

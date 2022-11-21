@@ -1,9 +1,22 @@
+<!-- 
+
+Aclaraciones:
+-Copiamos el codigo la plantilla ElaAdmin del codigo de "page-login" que reutilizaremos para definir el "login.php". Seleccionamos la seccion del body practicamente, descartamos los script que estan antes de finalizar tambien.
+-Agregamos el logo y cambiamos algunos valores de titulos y quitamos los que no vamos a usar comentandolos.
+
+CONEXION CON BASE DE DATOS: http://localhost:8080/phpmyadmin
+-Creamos una conexion, vamos a Nuevo y luego le damos el nombre "backend_mvc". Luego importamos la base de datos que ya tenia el proyecto (es simple asique se podria replicar si quisieramos).
+-La opcion de importar esta arriba al centro. Nos despliega la opc de Seleccionar el archivo de la base de datos y lo hacemos.
+-Seguiremos con mas informacion sobre la conexion en el archivo "conexion.php".
+
+-->
+
 <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-                        <img class="align-content" src="vistas/img/plantilla/logojumplogin.png" alt="">
+                        <img class="align-content" src="vistas/img/plantilla/logojumplogin.png" alt=""> <!--Añadimos la img del logo diseñado en Canva de Jump -->
                     </a>
                 </div>
                 <div class="login-form">
