@@ -23,11 +23,11 @@ CONEXION CON BASE DE DATOS: http://localhost:8080/phpmyadmin
                     <form>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" id="ingemail" name="ingemail" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" id="ingpassword" name="ingpassword" placeholder="Password">
                         </div>
                         <div class="checkbox">
                             <label>
@@ -48,6 +48,10 @@ CONEXION CON BASE DE DATOS: http://localhost:8080/phpmyadmin
                         <div class="register-link m-t-15 text-center">
                             <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
                         </div> -->
+
+                    $login = new ControladorAdministrador();
+                    $login->ctrIngresoAdministrador();
+
                     </form>
                 </div>
             </div>

@@ -24,6 +24,8 @@ Aclaraciones:
 <?php
 
     require_once "controladores/plantilla.controlador.php";
+    require_once "controladores/administrador.controlador.php";
+    
     require_once "modelos/administrador.modelo.php"; //Se carga en la clase 12.Creando modelos
     require_once "modelos/rutas.php"; //Se carga en la clase 12.Creando modelos
 
