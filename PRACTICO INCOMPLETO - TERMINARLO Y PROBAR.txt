@@ -1,0 +1,3 @@
+PRACTICO INCOMPLETO - TERMINARLO Y PROBAR
+
+Quedamos en el video: SECCION 6 PARTE 3 - Construyendo el login/ 14. Mostrando datos de session y terminando login
