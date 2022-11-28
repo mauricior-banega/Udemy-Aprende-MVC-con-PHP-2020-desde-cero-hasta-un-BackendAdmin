@@ -10,6 +10,11 @@ CSS - Exportamos los link rel de CSS de ElaAdmin en este documento. Asi como tam
 
 -->
 
+<!--Con esta linea PHP iniciamos la sesion -->
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

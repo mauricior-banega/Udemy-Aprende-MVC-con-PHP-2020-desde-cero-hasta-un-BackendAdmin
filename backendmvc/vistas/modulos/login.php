@@ -49,8 +49,12 @@ CONEXION CON BASE DE DATOS: http://localhost:8080/phpmyadmin
                             <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
                         </div> -->
 
+
+            <?php //Hacemos el llamado a ControlAdministrador para poder usar la funcion de ingreso
                     $login = new ControladorAdministrador();
                     $login->ctrIngresoAdministrador();
+                    
+            ?>
 
                     </form>
                 </div>
